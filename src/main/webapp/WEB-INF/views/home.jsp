@@ -7,8 +7,9 @@
 	</head>
 	<body>
 		<h1>Hello ${yourname}!</h1>
-		<form method="POST" action="<s:url value="/" />">
-			<label>Your Name: <input type="text" name="yourname" /></label>
+		<form method="POST" action="<s:url value="/" />" enctype="multipart/form-data">
+			<label>Your Name: <input type="text" name="yourname" /></label><br />
+			<label>Your Image: <input type="file" name="yourimage" /></label><br />
 			<input type="submit" />
 		</form>
 	</body>
