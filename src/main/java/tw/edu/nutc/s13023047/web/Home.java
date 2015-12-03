@@ -19,8 +19,8 @@ public class Home {
 	
 	@RequestMapping(method=RequestMethod.POST)
 	public String home(@RequestPart("yourimage") Part yourimage, String yourname, Model model) {
-		System.out.println(yourimage.getName());
 		model.addAttribute("yourname", yourname);
+		model.addAttribute("yourimage", yourimage);
 		return "home";
 	}
 }
